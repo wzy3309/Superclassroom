@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCC"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:id="@+id/occupyclass"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:hint="请输入教室名"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_frame"
+        android:layout_weight="0.03" />
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/white_frame"
+            android:drawableLeft="@android:drawable/ic_menu_recent_history"
+            android:gravity="center"
+            android:text="请选择时间"
+            android:textSize="18.5dp" />
+
+        <Spinner
+            android:id="@+id/starttime"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/white_frame"
+            android:gravity="center"
+            android:text="占用该间教室到"
+            android:textSize="18.5dp" />
+
+        <Spinner
+            android:id="@+id/endtime"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="占用"
+        android:id="@+id/sureoccupy"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/fillet_shape"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/occupyback"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/fillet_shape2"/>
+</LinearLayout>
